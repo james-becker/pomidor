@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="pomidor.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Exo+2|Istok+Web|Raleway|Rubik|Unica+One" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="row selector-container">
+  <div class="">
+    <div class="time-selector">
+      <div id="hline1">
+      </div>
+      <div id="hline2">
+      </div>
+      <div class="row">
+        <div class="container scroller">
+          <div id="hours" class="ticker" </div>
+            <div id="h-p2" class="p2 hval">22</div>
+            <div id="h-p1" class="p1 hval">23</div>
+            <div id="h-current" class="current hval">0</div>
+            <div id="h-n1" class="n1 hval">1</div>
+            <div id="h-n2" class="n2 hval">2</div>
+          </div>
+          <div class="separator">
+            :
+          </div>
+          <div id="minutes" class="ticker">
+            <div id="m-p2" class="p2">58</div>
+            <div id="m-p1" class="p1">59</div>
+            <div id="m-current" class="current mval">0</div>
+            <div id="m-n1" class="n1">1</div>
+            <div id="m-n2" class="n2">2</div>
+          </div>
+          <div class="separator">
+            :
+          </div>
+          <div id="seconds" class="ticker">
+            <div id="s-p2" class="p2">58</div>
+            <div id="s-p1" class="p1">59</div>
+            <div id="s-current" class="current sval">0</div>
+            <div id="s-n1" class="n1">1</div>
+            <div id="s-n2" class="n2">2</div>
+          </div>
+        </div>
+        <!-- /scroller -->
+      </div>
+    </div>
+    <!-- /time-selector -->
+  </div>
+  <!-- /col-sm-6 -->
+  <div class="">
+    <div class="break-selector">
+      <div id="bhline1">
+      </div>
+      <div id="bhline2">
+      </div>
+      <div class="row">
+        <div class="container scroller">
+          <div id="bminutes" class="bticker">
+            <div id="bm-p1" class="bp1">59</div>
+            <div id="bm-current" class="bcurrent mval">0</div>
+            <div id="bm-n1" class="bn1">1</div>
+          </div>
+          <div class="bseparator">
+            :
+          </div>
+          <div id="bseconds" class="bticker">
+            <div id="bs-p1" class="bp1">59</div>
+            <div id="bs-current" class="bcurrent sval">0</div>
+            <div id="bs-n1" class="bn1">1</div>
+          </div>
+        </div>
+        <!-- /scroller -->
+      </div>
+      <div class="row button-row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="">
+          <a href="#" class="button button-circle btn-pom">п</a>
+          <a href="#" class="button button-circle btn-reset">в</a>
+          <div class="switch">
+            <input id="toggle-switch" class="cmn-toggle cmn-toggle-round" type="checkbox">
+            <label id="toggle-switch-item" for="toggle-switch"></label>
+          </div>
+            <div class="stop-text">стоп</div>
+            <div class="start-text">на</div>
+        </div>
+      </div><!-- /break-selector -->
+    </div><!-- /col-sm-6 -->
+  </div><!-- /row -->
+</div><!-- row-selector-container -->
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js" defer></script>
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+  <script href="pomidor.js" type="text/javascript" defer></script>
+</body>
+</html>
