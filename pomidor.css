@@ -1,10 +1,6 @@
 body {
-  background-color: #222;
-/*   background-image: url('http://wall-papers.info/images/metal-background-hd/metal-background-hd-12.jpg'); */
-  background-position: center;
-  max-height: 100px;
-  overflow: hidden;
-  zoom: 160%
+  background-color: #000;
+  zoom: 200%
 }
 
 * {
@@ -20,21 +16,20 @@ body {
 }
 
 .selector-container {
-/*     width:300px;
-    height:200px; */
-    position:absolute;
-    left:50%;
-    top:40%;
-    margin:-100px 0 0 -150px;
-}
-
-col-centered {
-    float: none;
+    width:300px;
+    height:300px;
     margin: 0 auto;
-}
+    position: absolute;
+    transform: translate(-200px, -140px);
+    top: 50%;
+    left: 50%;
+  }
 
 .ticker {
-  font-family: "Unica One";
+  color: #eeeeee;
+  font-family: "Apple SD Gothic Neo";
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 100;
   font-size: 2em;
   text-align: center;
   width: 30px;
@@ -45,7 +40,8 @@ col-centered {
 }
 
 .bticker {
-  font-family: 'Unica One';
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
   font-size: 1.5em;
   text-align: center;
   width: 20px;
@@ -59,44 +55,54 @@ col-centered {
     cursor: ns-resize;
 }
 
+#seconds, #bseconds * {
+  text-align: right;
+}
+
 .p1 {
   font-size: .9em;
-  color: transparent;
-  text-shadow: 0 0 2px rgba(0,0,0,0.8);
+  color: white;
+  opacity: .6;
+  text-shadow: 0 0 2px rgba(250,250,250,0.7);
 }
 
 .n1 {
   font-size: .9em;
-  color: transparent;
-  text-shadow: 0 0 2px rgba(0,0,0,0.8);
+  color: white;
+  opacity: .6;
+  text-shadow: 0 0 2px rgba(250,250,250,0.7);
 }
 
 .p2 {
   font-size: .8em;
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,.7);
+  color: white;
+  opacity: .2;
+  text-shadow: 0 0 5px rgba(250,250,250,0.7);
 }
 
 .n2 {
   font-size: .8em;
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,.7);
+  color: white;
+  opacity: .2;
+  text-shadow: 0 0 5px rgba(250,250,250,0.7);
 }
 
 .bp1 {
   font-size: .9em;
-  color: transparent;
-  text-shadow: 0 0 3px rgba(0,0,0,0.7);
+  color: white;
+  opacity: .2;
+  text-shadow: 0 0 3px rgba(250,250,250,0.7);
 }
 
 .bn1 {
   font-size: .9em;
-  color: transparent;
-  text-shadow: 0 0 3px rgba(0,0,0,0.7);
+  color: white;
+  opacity: .2;
+  text-shadow: 0 0 3px rgba(250,250,250,0.7);
 }
 
 .separator {
-  color: transparent;
+  color: white;
   text-shadow: 0 0 0px #222;
   font-family: Oswald;
   font-size: 2em;
@@ -111,7 +117,7 @@ col-centered {
 }
 
 .bseparator {
-  color: transparent;
+  color: white;
   text-shadow: 0 0 0px #222;
   font-family: Oswald;
   font-size: 1.5em;
@@ -125,60 +131,59 @@ col-centered {
 /*   background-color: #369 */
 }
 
+/*.hval {
+  text-align: center;
+}*/
+
 .current {
-  color: transparent;
+  color: white;
   text-shadow: 0 0 1px rgba(0,0,0,1);
+  transform: translate(-6px);
 }
 
 .bcurrent {
-  color: transparent;
+  color: white;
   text-shadow: 0 0 1px rgba(0,0,0,1);
+  transform: translate(-4px);
 }
 
 .time-selector {
-  -moz-box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  -webkit-box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  background-color: #622;
-  background: -webkit-linear-gradient(#edc, #f8dede, #edc); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#edc, #f8dede, #edc); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#edc, #f8dede, #edc); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#edc, #f8dede, #edc); /* Standard syntax */
-  border-radius: 1000px;
-  border-style: solid;
-  border-width: 8px;
-  border-color: #888;
+  -moz-box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  /*background-color: #000;*/
+  border-radius: 3px;
+  /*  border-style: solid;
+  border-width: 2px;
+  border-color: #0f0;*/
   width: 190px;
-  height: 190px;
+  height: 170px;
   margin: 30px auto;
   position: relative;
 }
 
 .time-selector .row {
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 20px;
 }
 
 .break-selector {
-  -moz-box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  -webkit-box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  box-shadow: inset -1px -3px 5px rgba(50, 50, 50, .4);
-  background-color: #252;
-  background: -webkit-linear-gradient(#edc, #f8dede, #edc); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#edc, #f8dede, #edc); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#edc, #f8dede, #edc); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#edc, #f8dede, #edc); /* Standard syntax */
-  border-radius: 1000px;
-  border-style: solid;
-  border-width: 8px;
-  border-color: #888;
+  -moz-box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  box-shadow: inset -1px -3px 5px rgba(0, 0, 0, .4);
+  background-color: #000;
+  border-radius: 3px;
+  /*  border-style: solid;
+  border-width: 2px;
+  border-color: #0f0;*/
+  z-index: -10;
   width: 120px;
   height: 120px;
   margin: 64px auto;
   position: relative;
-  top: -270px;
-  left: 170px;
+  top: -242px;
+  left: 130px;
 }
 
 .break-selector .row {
@@ -221,51 +226,51 @@ col-centered {
 }
 
 #s-p2 {
-  transform: rotateX(60deg) skewX(4deg) translateX(-7px) translateY(15px);
+  transform: rotateX(60deg) skewX(4deg) translateX(-11px) translateY(15px);
 }
 
 #s-p1 {
-  transform: rotateX(40deg) skewX(6deg) translateX(-1px);
+  transform: rotateX(40deg) skewX(6deg) translateX(-4px);
 }
 
 #s-n1 {
-  transform: rotateX(40deg) skewX(-6deg) translateX(-1px);
+  transform: rotateX(40deg) skewX(-6deg) translateX(-4px);
 }
 
 #s-n2 {
-  transform: rotateX(60deg) skewX(-4deg) translateX(-7px) translateY(-15px)
+  transform: rotateX(60deg) skewX(-4deg) translateX(-11px) translateY(-15px)
 }
 
 #hline1 {
   width: 144px;
-  height: 1px;
+  height: .5px;
   position: relative;
-  top: 68px;
-  background-color: #000;
+  top: 63px;
+  background-color: #fff;
 }
 
 #hline2 {
   width: 144px;
-  height: 1px;
+  height: .5px;
   position: relative;
-  top: 108px;
-  background-color: #000;
+  top: 103px;
+  background-color: #fff;
 }
 
 #bhline1 {
   width: 66px;
-  height: 1px;
+  height: .5px;
   position: relative;
-  top: 27px;
-  background-color: #000;
+  top: 24px;
+  background-color: #fff;
 }
 
 #bhline2 {
   width: 66px;
-  height: 1px;
+  height: .5px;
   position: relative;
-  top: 57px;
-  background-color: #000;
+  top: 54px;
+  background-color: #fff;
 }
 
 .below {
@@ -280,7 +285,7 @@ col-centered {
 
 
 #bm-p1 {
-  transform: rotateX(40deg) skewX(-4deg) translateX(3px);
+  transform: rotateX(40deg) skewX(-7deg) translateX(3px);
 }
 
 #bm-n1 {
@@ -292,21 +297,26 @@ col-centered {
 }
 
 #bs-n1 {
-  transform: rotateX(40deg) skewX(-4deg) translateX(-3px);
+  transform: rotateX(40deg) skewX(-7deg) translateX(-3px);
 }
 
-
+.button-row {
+  position: relative;
+  margin: 0 auto;
+  bottom: 310px;
+    left: 239px;
+}
 
 .cmn-toggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
+  /*position: absolute;*/
+  /*margin-left: -9999px;*/
+  display: none;
 }
 .cmn-toggle + label {
   display: block;
   position: relative;
   top: 10px;
-  left: -165px;
+  left: -0px;
   cursor: pointer;
   outline: none;
   user-select: none;
@@ -330,19 +340,20 @@ input.cmn-toggle-round + label:after {
 }
 input.cmn-toggle-round + label:before {
   right: 1px;
-  background-color: #444;
+  background-color: #333;
   border-radius: 5px;
   transition: background 0.4s;
 }
 input.cmn-toggle-round + label:after {
   width: 12px;
-  background-color: #999;
+  background-color: #eee;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: margin 0.4s;
 }
 input.cmn-toggle-round:checked + label:before {
-  background-color: #444;
+  background-color: #ff5500;
+  box-shadow: 0px 0px 4px #ff6600;
 }
 input.cmn-toggle-round:checked + label:after {
   margin-left: 70px;
@@ -352,10 +363,10 @@ input.cmn-toggle-round:checked + label:after {
 /* BUTTONS */
 
 .button {
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+/*  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
-  background-color: #833;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);*/
+  background-color: #40c030;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -365,36 +376,36 @@ input.cmn-toggle-round:checked + label:after {
   height: 32px;
   line-height: 30px;
   padding: 0px 25.6px;
-  font-weight: 300;
   font-size: 14px;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-  color: #ccc;
-  text-shadow: 0 1px 1px white;
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
+  color: #0f0;
   margin: 0;
   text-decoration: none;
-  text-align: center; }
-  /* line 44, ../scss/partials/_buttons.scss */
-  .button:hover, .button:focus, .button:active, .button.is-active, .button.active {
-    text-decoration: none; }
-  /* line 48, ../scss/partials/_buttons.scss */
-  .button:hover, .button:focus {
-    color: #bbb;
-    background-color: #767676;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #767676), color-stop(100%, #656565));
-    background: -moz-linear-gradient(top, #767676, #656565);
-    background: -webkit-linear-gradient(top, #767676, #656565);
-    background: linear-gradient(to bottom, #767676, #656565); }
-  /* line 53, ../scss/partials/_buttons.scss */
-  .button:active, .button.is-active, .button.active {
-    -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-    background: #767676;
-    color: #c2c2c2; }
-  /* line 59, ../scss/partials/_buttons.scss */
-  .button:focus {
-    outline: none; }
+  text-align: center;
+}
+/* line 44, ../scss/partials/_buttons.scss */
+.button:hover, .button:focus, .button:active, .button.is-active, .button.active {
+  text-decoration: none; }
+/* line 48, ../scss/partials/_buttons.scss */
+.button:hover, .button:focus {
+  color: #bbb;
+  background-color: #767676;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #767676), color-stop(100%, #656565));
+  background: -moz-linear-gradient(top, #767676, #656565);
+  background: -webkit-linear-gradient(top, #767676, #656565);
+  background: linear-gradient(to bottom, #767676, #656565); }
+/* line 53, ../scss/partials/_buttons.scss */
+.button:active, .button.is-active, .button.active {
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  background: #767676;
+  color: #c2c2c2; }
+/* line 59, ../scss/partials/_buttons.scss */
+.button:focus {
+  outline: none; }
 
     /* line 65, ../scss/partials/_buttons.scss */
 input.button, button.button {
@@ -405,6 +416,7 @@ input.button, button.button {
 
   /* line 201, ../scss/partials/_buttons.scss */
 .button-circle {
+  background-color: #095000;
   -moz-border-radius: 120px;
   -webkit-border-radius: 120px;
   border-radius: 120px;
@@ -415,44 +427,55 @@ input.button, button.button {
   line-height: 32px;
   height: 38px;
   padding: 0px;
-  border-color: #777;
-  border-width: 4px; }
+  border-width: 0px; }
 
 .btn-pom {
-  font-family: 'Istok Web';
-  font-size: 18px;
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
+  font-size: .7rem;
   position: relative;
-  top: -40px;
-  left: -40px;
+}
+
+.switch {
+  position: relative;
+  right: 90px;
+  top:10px;
 }
 
 .btn-reset {
-  font-family: 'Istok Web';
-  font-size: 18px;
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
+  font-size: .7rem;
   position: relative;
-  top: 4px;
-  left: -106px;
 }
 
+.btn-pom  div,
+.btn-reset div {
+    position: relative;
+    top: 4px;
+  }
+
 .start-text {
-  font-family: 'Istok Web';
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
   width: 30px;
   font-size: 1.2em;
-  color: #888;
-  position: relative;
-  left: -72px;
-  top: -44px;
+  color: #eee;
+  position: absolute;
+  left: 94px;
+  top: 16px;
   text-shadow: 2px 1px 4px #222;
 }
 
 .stop-text {
-  font-family: 'Istok Web';
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
   font-size: 1.2em;
   width: 30px;
-  color: #888;
-  position: relative;
-  left: -208px;
-  top: -20px;
+  color: #eee;
+  position: absolute;
+  left: -45px;
+  top: 16px;
   text-shadow: 2px 1px 4px #222;
 }
 

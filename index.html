@@ -14,8 +14,8 @@
 
 <body>
 
-<div class="row selector-container">
-  <div class="">
+  <div class="selector-container">
+
     <div class="time-selector">
       <div class="row">
         <div id="hline1"></div>
@@ -51,8 +51,7 @@
         </div><!-- /scroller -->
       </div>
     </div><!-- /time-selector -->
-  </div><!-- "" -->
-  <div class="">
+
     <div class="break-selector">
       <div class="row">
         <div id="bhline1"></div>
@@ -72,25 +71,30 @@
             <div id="bs-n1" class="bn1">1</div>
           </div>
         </div>
-        <!-- /scroller -->
       </div>
-      <div class="row button-row">
-        <div class="col-sm-3">
+      <!-- /scroller -->
+    </div>
 
-        </div>
-        <div class="">
-          <a href="#" class="button button-circle btn-pom">п</a>
-          <a href="#" class="button button-circle btn-reset">в</a>
-          <div class="switch">
-            <input id="toggle-switch" class="cmn-toggle cmn-toggle-round" type="checkbox">
-            <label id="toggle-switch-item" for="toggle-switch"></label>
-          </div>
-            <div class="stop-text">стоп</div>
-            <div class="start-text">на</div>
-        </div>
-      </div><!-- /break-selector -->
-    </div><!-- /col-sm-6 -->
-  </div><!-- /row -->
+    <div class="button-row">
+
+      <a href="#" class="button button-circle btn-pom">
+        <div>Set</div>
+      </a>
+      <a href="#" class="button button-circle btn-reset">
+        <div>Reset</div>
+      </a>
+      <div class="switch">
+        <div class="stop-text">Stop</div>
+        <div class="start-text">Start</div>
+        <input id="toggle-switch" class="cmn-toggle cmn-toggle-round" type="checkbox">
+        <label id="toggle-switch-item" for="toggle-switch"></label>
+      </div>
+
+    </div>
+
+  </div><!-- /col-sm-6 -->
+
+
 </div><!-- row-selector-container -->
 </body>
 

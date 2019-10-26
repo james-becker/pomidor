@@ -252,12 +252,18 @@ function allowTimerClicks() {
 $("#toggle-switch").change(function(){
   if ( $(this).is(':checked') ) {
     startTimer();
+    changeSwitchBackground("#ff5500");
     sounds['open'].play();
   } else if (!$(this).is(':checked') ) {
     stopTimer();
+    changeSwitchBackground("#222");
     sounds['closed'].play();
   };
 });
+
+function changeSwitchBackground(color) {
+  $("#toggle-switch").css("background-color", color);
+};
 
 // var myVar = setInterval(function(){
 //     if (running) {
