@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Pomidor</title>
-  <link href="/pomidor.css" rel="stylesheet" type="text/css">
+  <link href="./pomidor.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Exo+2|Istok+Web|Raleway|Rubik|Unica+One" rel="stylesheet">
+  <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <script type="text/javascript"  src="./pomidor.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -14,11 +17,9 @@
 <div class="row selector-container">
   <div class="">
     <div class="time-selector">
-      <div id="hline1">
-      </div>
-      <div id="hline2">
-      </div>
       <div class="row">
+        <div id="hline1"></div>
+        <div id="hline2"></div>
         <div class="container scroller">
           <div id="hours" class="ticker">
             <div id="h-p2" class="p2 hval">22</div>
@@ -53,11 +54,9 @@
   </div><!-- "" -->
   <div class="">
     <div class="break-selector">
-      <div id="bhline1">
-      </div>
-      <div id="bhline2">
-      </div>
       <div class="row">
+        <div id="bhline1"></div>
+        <div id="bhline2"></div>
         <div class="container scroller">
           <div id="bminutes" class="bticker">
             <div id="bm-p1" class="bp1">59</div>
@@ -93,8 +92,6 @@
     </div><!-- /col-sm-6 -->
   </div><!-- /row -->
 </div><!-- row-selector-container -->
-  <script href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js" defer></script>
-  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
-  <script href="pomidor.js" type="text/javascript" defer></script>
 </body>
+
 </html>
